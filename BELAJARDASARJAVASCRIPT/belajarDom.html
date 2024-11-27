@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event Listener</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contoh DOM Event Listener</h1>
+    <button id="tekanButton">Tekan Saya</button>
+    <div id="output"></div>
+
+    <script>
+        // Ambil referensi elemen
+        const button = document.getElementById('tekanButton');
+        const output = document.getElementById('output');
+
+        // Tambahkan event listener ke tombol
+        button.addEventListener('click', function() {
+            output.textContent = 'Tombol telah ditekan!';
+        });
+    </script>
+</body>
+</html>
